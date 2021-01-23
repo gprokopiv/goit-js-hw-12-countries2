@@ -20,7 +20,7 @@ body {
 .list {
   list-style: none;
 }
-.section {
+.form {
   margin-left: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -87,3 +87,35 @@ body {
   font-size: 24px;
   font-weight: 500;
 }
+.form-inline {
+  text-align: center;
+}
+.form_country {
+  display: flex;
+  justify-content: center;
+}
+/* 
+.flag {
+  width: 350px;
+  height: 335px;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.form-control {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 40px;
+  width: 538px;
+}
+
+.listCountry {
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
+} */

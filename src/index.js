@@ -1,4 +1,4 @@
 import './styles.css';
 import './js/fetchCountries';
-import './js/markup';
-import './js/pnotify';
+import './js/countries';
+import './js/notifications';
