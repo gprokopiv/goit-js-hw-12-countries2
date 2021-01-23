@@ -27,26 +27,21 @@ function onSearch(e) {
             'No country has been found. Please enter a more specific query!',
         });
       } else if (data.length === 1) {
-        renderCountriesMarkup(data, countryOneTpl);
+        refs.cardContainer.innerHTML = countryOneTpl(data);
       } else if (data.length <= 10) {
-        buildListMarkup(data, countryListTpl);
+        refs.cardContainer.innerHTML = countryListTpl(data);
       }
     })
-    .catch(Error => {
-      Error({
+    .catch(() => {
+      error({
         text: 'You must enter query parameters!',
       });
-      console.log(Error);
     });
 }
 
-function renderCountriesMarkup(country) {
-  const markup = countryListTpl(country);
-  refs.cardContainer.innerHTML = markup;
-}
+
 
 function clearCountriesContainer() {
   refs.cardContainer.innerHTML = '';
 }
 
-refs.cardContainer.addEventListener('input', debounce(onSearch, 500));

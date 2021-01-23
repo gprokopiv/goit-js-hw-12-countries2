@@ -4,3 +4,6 @@ export default function getRefs() {
       searchForm: document.querySelector('.js-search-form'),
     };
   }
+
+
+  

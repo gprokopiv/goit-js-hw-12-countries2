@@ -1,19 +1,17 @@
 {{#each this}}
-<p class="country js-country">
     <h1 class="country-title">{{name}}</h1>
     <div class="country-box">
-        <ul class="list country-list-info">
-            <li class="country-list-item"><span class="country-text">Capital:</span> {{this.capital}}</li>
-            <li class="country-list-item"><span class="country-text">Population:</span> {{this.population}}</li>
-            <li class="country-list-item"><span class="country-text">Languages:</span>
-                <ul class="country-sublist">
+        <ul class="list country-info">
+            <li class="country-item">Capital:<span class="country-text"> {{this.capital}}</li>
+            <li class="country-item">Population:<span class="country-text"> {{this.population}}</li>
+            <li class="country-item">Languages:<span class="country-text">
+                <ul>
                    {{#each languages}}
-                    <li class="sublist-item">{{name}}</li>
+                    <li class="language-item">{{name}}</li>
                     {{/each}}
                 </ul>
             </li>
         </ul>
-        <img class="flag-image" src="{{this.flag}}" alt='Flag of {{this.name}}' width="250px" height="auto">
+        <img src="{{this.flag}}" alt='Flag of {{this.name}}' width="250px" height="auto">
     </div>
-</p>
 {{/each}}
