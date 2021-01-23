@@ -1,6 +1,6 @@
 {{#each this}}
-<article class="country js-country">
-    <h1 class="country-title">{{this.name}}</h1>
+<p class="country js-country">
+    <h1 class="country-title">{{name}}</h1>
     <div class="country-box">
         <ul class="list country-list-info">
             <li class="country-list-item"><span class="country-text">Capital:</span> {{this.capital}}</li>
@@ -13,7 +13,7 @@
                 </ul>
             </li>
         </ul>
-        <img class="flag-image" src="{{this.flag}}" alt='{{this.name}}' width="250px" height="auto">
+        <img class="flag-image" src="{{this.flag}}" alt='Flag of {{this.name}}' width="250px" height="auto">
     </div>
-</article>
+</p>
 {{/each}}
